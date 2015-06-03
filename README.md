@@ -20,9 +20,9 @@ start ringing accordingly. Secondly, if the object is in idle state for certain 
 
 
 
- #define trigpin 13 //Sensor trigger set to Pin 8 as output
- #define echopin 12//Sensor echo set to pin 7 as Input 
-int Buzzer = 8; // Buzzer set to pin 6 as output
+ #define trigpin 13                   //Sensor trigger set to Pin 8 as output
+ #define echopin 12                  //Sensor echo set to pin 7 as Input 
+int Buzzer = 8;                     // Buzzer set to pin 6 as output
 long distance;
 int currentdistance = 0;
 int previousdistance = 0;
@@ -106,7 +106,7 @@ void loop() {
     }
   }
   else {
-    if (sensedelay != sensing && (millis() - distancechange > Timeout)) // Go into Power saving mode by setting Buzzer to Low
+    if (sensedelay != sensing && (millis() - distancechange > Timeout))    // Go into Power saving mode by setting Buzzer to Low
     {
       digitalWrite(Buzzer, LOW);
       sensedelay = sensing;
