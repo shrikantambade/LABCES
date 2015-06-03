@@ -106,8 +106,8 @@ void loop() {
     }
   }
   else {
-    if (sensedelay != sensing && (millis() - distancechange > Timeout))    // Go into Power
- saving mode by setting Buzzer to Low
+// Go into Power saving mode by setting Buzzer to Low
+    if (sensedelay != sensing && (millis() - distancechange > Timeout))    
     {
       digitalWrite(Buzzer, LOW);
       sensedelay = sensing;
