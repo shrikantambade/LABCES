@@ -1,5 +1,5 @@
-Parking Assistance
-################## 
+#Parking Assistance
+
 
 This project assists vehicles to park safely by considering the distances from vehicle to the Obstacles. 
 Ultrasonic sensor is used to sense the object by sending the signal through its Trigger pin and  this signal is given as an input to the Echo pin. Based on the received signal it calculates distance between the object and sensor by using inbuilt function pulseIn(). This calculated distance will act as an input to the Buzzer and based on distance Buzzer will react. Two aspects are considered to save the power in this project. Firstly, If the sensor doesn't detect any object the Buzzer will remain in low state otherwise  
@@ -7,8 +7,8 @@ start ringing accordingly. Secondly, if the object is in idle state for certain 
 
 Requirements for the project are as follows 
 
-Requirements:
-#############
+# Requirements:
+
 
 -Arduino Uno
 - Ultrasonic sensor HC-SR04
@@ -16,8 +16,8 @@ Requirements:
 - External Battery
 -Jumper cable
 
-Code: 
-######
+#Code: 
+
 
 
 #define trigpin 13 //Sensor trigger set to Pin 8 as output
